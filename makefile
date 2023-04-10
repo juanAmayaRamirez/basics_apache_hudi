@@ -23,7 +23,6 @@ ifeq ($(filter $(ENV),$(ALLOWED_ENVS)),)
 endif
 	terraform init -reconfigure -backend-config="bucket=${S3BUCKET}" -backend-config="key=terraform-${ENV}/terraform.tfstate" -backend-config="region=us-east-1" 
 
-
 plan:
 ifndef ENV
 	$(error ENV is not set. Please specify a environment name, e.g., 'make plan ENV=dev')

@@ -1,2 +1,2 @@
 # TF_TMPLT
-repository template for terraform projects
+sample repository for apache Hudi using terraform
